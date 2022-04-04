@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+  height: 100%;
   background: #1a032b;
   overflow: hidden;
   perspective: 10rem;
@@ -48,6 +48,15 @@ body {
   z-index: -1;
 }
 
+.drop {
+  width: 1rem;
+  height: 7rem;
+  background: #fff;
+  position: absolute;
+  border-radius: 20%;
+  opacity: 0.2;
+}
+
 .rain1 {
   left: 5rem;
   top: 2rem;
@@ -60,21 +69,31 @@ body {
   animation: raining 3s linear infinite both;
 }
 
+.drop2 {
+  top: 12rem;
+  animation: raining 4s linear infinite both -2s;
+}
+
 .rain3 {
+  left: 5rem;
+  top: 35rem;
+  animation: raining 3s linear infinite both;
+}
+
+.rain4 {
+  right: 23rem;
+  top: 6rem;
+  animation: raining 4s linear infinite both;
+}
+
+.rain5 {
   left: 25rem;
   top: 47rem;
   animation: raining 3s linear infinite both -3s;
 }
 
-.rain4 {
-  left: 5rem;
-  top: 2rem;
-  animation: raining 2s linear infinite both;
-}
-
-.rain5 {
-  left: 5rem;
-  top: 2rem;
+.drop5 {
+  top: -6rem;
   animation: raining 2s linear infinite both;
 }
 
@@ -91,41 +110,32 @@ body {
 }
 
 .rain8 {
-  left: 5rem;
-  top: 2rem;
-  animation: raining 2s linear infinite both;
+  right: 25rem;
+  top: 40rem;
+  animation: raining 3s linear infinite both;
+}
+
+.drop8 {
+  top: -7rem;
+  animation: raining 4s linear infinite both -6s;
 }
 
 .rain9 {
-  left: 5rem;
-  top: 2rem;
-  animation: raining 2s linear infinite both;
-}
-
-
-.drop {
-  width: 1rem;
-  height: 7rem;
-  background: #fff;
-  border-radius: 20%;
-  opacity: 0.2;
-}
-
-.drop2 {
-  top: 12rem;
-  animation: raining 4s linear infinite both -2s;
+  right: 5rem;
+  top: 15.5rem;
+  animation: raining 3s linear infinite both;
 }
 
 .rain10 {
-  left: 24rem;
+  right: 24rem;
   top: -4rem;
   animation: raining 2s linear infinite both -3s;
 }
 
 .drop11 {
-  right: 17rem;
+  right: 175rem;
   top: 20rem;
-  animation: raining 3s linear infinite both;
+  animation: raining 4s linear infinite both -1s;
 }
 
 .drop12 {
