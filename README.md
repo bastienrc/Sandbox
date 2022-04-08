@@ -1,4 +1,4 @@
-# Sandbox
+# Sandbox
 
 ## KanaTest
 
@@ -8,7 +8,7 @@
 yarn create vite
 ```
 
-J'utilise « react-ts », la version typescript de react.
+J'utilise « react-ts », la version typescript de react pour essayer.
 
 ## Rocket
 
