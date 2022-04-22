@@ -274,6 +274,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@openfonts/noto-serif-jp_japanese@^1.44.1":
+  version "1.44.1"
+  resolved "https://registry.yarnpkg.com/@openfonts/noto-serif-jp_japanese/-/noto-serif-jp_japanese-1.44.1.tgz#368bba18b0ceacdb9e4ec3e231dc97569963ff5a"
+  integrity sha512-orZtjZ+OMoxVo2oYPuvvK2Bp4EVHhTnTTFpjgrMLUKbkXCEh2DeGr5jaxYRUu2mhHH+nY1nrAELN5p++i5Bfig==
+
 "@rollup/pluginutils@^4.2.0":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"

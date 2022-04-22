@@ -52,7 +52,7 @@ function App() {
 
 	const [input, setInput] = useState('')
 	const [current, setCurrent] = useState(0)
-	
+
 	const [streak, setStreak] = useState(0)
 	const [maxStreak, setMaxStreak] = useState(0)
 
@@ -69,7 +69,7 @@ function App() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		 
+
 		if (input.toLowerCase() === hiragana[current].romanji) {
 			setStreak(streak + 1)
 			setMaxStreak(streak + 1 > maxStreak ? streak + 1 : maxStreak)
@@ -80,7 +80,7 @@ function App() {
 		} else {
 			const h = hiragana[current].hiragana
 			const r = hiragana[current].romanji
-			setError(`Wrong! The correct answer for ${h} is ${r}`)
+			setError([h, r])
 			setStreak(0)
 			localStorage.setItem('streak', 0)
 		}
@@ -105,7 +105,7 @@ function App() {
 			</header>
 
 			<div className="text-9xl font-bold mb-8">
-				<p>{hiragana[current].hiragana}</p>
+				<p className='hiragana'>{hiragana[current].hiragana}</p>
 			</div>
 
 			<div className="mb-8">
@@ -114,12 +114,13 @@ function App() {
 						type="text"
 						onChange={handleChange}
 						value={input}
-						className="block w-24 bg-transparent border-b-2 border-b-white mx-auto outline-none text-center text-6xl pb-2" />
+						className="block w-24 bg-transparent border-b-2 border-b-white mx-auto outline-none text-center text-6xl pb-2"
+					/>
 				</form>
 			</div>
-			{error && 
+			{error &&
 				<div>
-					<p>{ error }</p>
+					<p>Wrong! The correct answer for <strong className='hiragana'>{error[0]}</strong> is <strong>{error[1]}</strong></p>
 				</div>
 			}
 		</div>
