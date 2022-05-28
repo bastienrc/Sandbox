@@ -10,7 +10,8 @@
   "dependencies": {
     "@openfonts/noto-serif-jp_japanese": "1.44.1",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "1.3.2",
