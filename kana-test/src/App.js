@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-function App() {
+export default function App() {
 	const hiragana = [
 		{ romanji: 'a', hiragana: 'あ' },
 		{ romanji: 'i', hiragana: 'い' },
@@ -126,5 +126,3 @@ function App() {
 		</div>
 	)
 }
-
-export default App
