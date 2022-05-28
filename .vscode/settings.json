@@ -1,3 +1,22 @@
 {
-  "standard.autoFixOnSave": true
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "standard.autoFixOnSave": true,
+  "standard.options": {
+    "globals": [
+      "fetch",
+      "localStorage",
+    ],
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  }
 }
