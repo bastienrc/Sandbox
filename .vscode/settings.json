@@ -18,5 +18,7 @@
   },
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
-  }
+  },
+  "standard.enableGlobally": true,
+  "standard.engine": "standard"
 }
