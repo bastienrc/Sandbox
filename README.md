@@ -1,6 +1,8 @@
 # Sandbox
 
-https://www.youtube.com/watch?v=sC7h3cABq2c
+## 12 Juillet 2022
+
+Je commence Typescript et je continue le menu, c'est compliqué de convertir un code js en react.
 
 ## 24 avril 2022 : Tailwind
 
@@ -17,8 +19,7 @@ https://www.youtube.com/watch?v=sC7h3cABq2c
 - [Tailwind CSS Starter Template - Screenshot Landing Page](https://github.com/tailwindtoolbox/Screenshot-Landing-Page) by Tailwind Toolbox (MIT)
 - [Tailwind CSS Starter Template - Landing Page](https://github.com/tailwindtoolbox/Landing-Page) by Tailwind Toolbox (MIT)
 - [Best Free Tailwind CSS Templates](https://tailwindtemplates.co/templates?type=free) by Tailwind Templates
-
-https://themewagon.com/theme-framework/tailwind-css/
+- [Free Responsive Tailwind CSS Templates](https://themewagon.com/theme-framework/tailwind-css)
 
 
 ## 8 avril 2022: KanaTest

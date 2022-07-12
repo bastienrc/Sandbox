@@ -1,10 +1,24 @@
 @import "@openfonts/noto-serif-jp_japanese/index.css";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --bgColorMenu: #1d1d27;
+  --duration: .7s;
+}
+
+html *,
+html *::before,
+html *::after {
+  box-sizing: inherit;
+}
+
 .hiragana {
   font-family: "Noto Serif JP", serif;
   font-size: 1.5em;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
