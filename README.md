@@ -5,7 +5,8 @@ Zone de tests de React
 ## 11 Octobre 2022
 
 - Ajout de mon environnement de développement avec dev container
-- sandbox/sandbox => sandbox/typescript
+- Move sandbox/sandbox => sandbox/typescript
+- Update/Upgrade sandbox/typescript
 
 ## 12 Juillet 2022
 
