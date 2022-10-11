@@ -1,5 +1,12 @@
 # Sandbox
 
+Zone de tests de React
+
+## 11 Octobre 2022
+
+- Ajout de mon environnement de développement avec dev container
+- sandbox/sandbox => sandbox/typescript
+
 ## 12 Juillet 2022
 
 Je commence Typescript et je continue le menu, c'est compliqué de convertir un code js en react.
