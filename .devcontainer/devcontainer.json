@@ -44,7 +44,8 @@
 				"Gruntfuggly.todo-tree",
 				"planbcoding.vscode-react-refactor",
 				"styled-components.vscode-styled-components",
-				"redhat.vscode-yaml"
+				"redhat.vscode-yaml",
+				"ritwickdey.LiveServer"
 			]
 		}
 	},
