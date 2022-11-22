@@ -89,7 +89,7 @@
   "git.suggestSmartCommit": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "json.maxItemsComputed": 50000,
-  "sync.autoUpload": true,
+  "sync.autoUpload": false,
   "todo-tree.general.tags": [
     "BUG",
     "HACK",
