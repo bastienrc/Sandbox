@@ -1,6 +1,11 @@
 # Sandbox
 
-Zone de tests de React
+Mes expérimentations avec React
+
+## 22 Novembre 2022
+
+- Mise à jour de mon environnement de développement avec dev container
+- Delete dossier typescript
 
 ## 11 Octobre 2022
 
