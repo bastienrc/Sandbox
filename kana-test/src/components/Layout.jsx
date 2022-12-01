@@ -9,14 +9,15 @@ const Container = styled.div`
   overflow: hidden;
   align-items: baseline;
   justify-content: center;
-  background-color: ${bgColorsBody[0]};
+  /* background-color: ${bgColorsBody[0]}; */
+  background-color: rgb(30 41 59);
   -webkit-tap-highlight-color: transparent;
   transition: background-color .7s;
 `
 
 const Navbar = styled.nav`
   margin: 0;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: flex;
   /* Works well with 100% width  */
   width: 100%;
@@ -121,7 +122,9 @@ const Main = styled.div`
   margin: auto;
   width: 80%;
   height: 50%;
-  background: #fff;
+  /* background: #fff; */
+  color: #fff;
+  text-align: center;
 `
 
 export default function Layout () {
