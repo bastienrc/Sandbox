@@ -1,19 +1,15 @@
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-// const GlobalStyle = createGlobalStyle`
-//    div${Thing} {
-//      color: red;
-//    }
-//  `
+const bgColorsBody = ['#ffb457', '#ff96bd', '#9999fb', '#ffe797', '#cffff1']
 
 const Container = styled.div`
   margin: 0;
   height: 100vh;
   overflow: hidden;
   align-items: baseline;
-  /* justify-content: center; */
-  background-color: #ffb457;
+  justify-content: center;
+  background-color: ${bgColorsBody[0]};
   -webkit-tap-highlight-color: transparent;
   transition: background-color .7s;
 `
@@ -33,7 +29,7 @@ const Navbar = styled.nav`
   background-color: #1d1d27;
 `
 
-const Item = styled.button`
+const Item = styled(NavLink)`
   all: unset;
   flex-grow: 1;
   z-index: 100;
@@ -45,7 +41,7 @@ const Item = styled.button`
   will-change: transform;
   justify-content: center;
   padding: 0.55em 0 0.85em;
-  transition: transform var(--timeOut, .7s);
+  transition: transform var(1000, .7s);
 
   &::before {
     content: "";
@@ -64,7 +60,30 @@ const Item = styled.button`
 
   &.active::before {
     transform: scale(1);
-    background-color: var(--bgColorItem);
+  }
+
+  &.active:nth-child(1)::before {
+    background-color: ${bgColorsBody[0]};
+  }
+
+  &.active:nth-child(2)::before {
+    background-color: ${bgColorsBody[1]};
+  }
+
+  &.active:nth-child(3)::before {
+    background-color: ${bgColorsBody[2]};
+  }
+
+  &.active:nth-child(4)::before {
+    background-color: ${bgColorsBody[3]};
+  }
+
+  &.active:nth-child(5)::before {
+    background-color: ${bgColorsBody[4]};
+  }
+
+  &.active .icon {
+    animation: strok 1.5s reverse
   }
 `
 
@@ -89,7 +108,8 @@ const Border = styled.div`
   clip-path: url(#menu);
   will-change: transform;
   background-color: #1d1d27;
-  transition: transform var(--timeOut, .7s);
+  /* transition: transform var(--timeOut, .7s); */
+  transition: transform translate3d(200px, 0 , 0);
 `
 
 const SVGContainer = styled.div`
@@ -105,60 +125,59 @@ const Main = styled.div`
 `
 
 export default function Layout () {
-  // const body = document.body
+  // const body = document.getElementById('main')
   // const bgColorsBody = ['#ffb457', '#ff96bd', '#9999fb', '#ffe797', '#cffff1']
   // const menu = body.querySelector('.menu')
-  // const menuItems = menu.querySelectorAll('.menu__item')
   // const menuBorder = menu.querySelector('.menu__border')
-  // let activeItem = menu.querySelector('.active')
 
-  function clickItem (item, index) {
-    menu.style.removeProperty('--timeOut')
+  // function handleClickItem (msg) {
+  // menu.style.removeProperty("--timeOut");
 
-    if (activeItem === item) return
-
-    if (activeItem) {
-      activeItem.classList.remove('active')
-    }
-
-    item.classList.add('active')
-    body.style.backgroundColor = bgColorsBody[index]
-    activeItem = item
-    offsetMenuBorder(activeItem, menuBorder)
-  }
-
-  // function offsetMenuBorder (element, menuBorder) {
-  //   const offsetActiveItem = element.getBoundingClientRect()
-  //   const left = Math.floor(offsetActiveItem.left - menu.offsetLeft - (menuBorder.offsetWidth - offsetActiveItem.width) / 2) + 'px'
-  //   menuBorder.style.transform = `translate3d(${left}, 0 , 0)`
+  // body.style.backgroundColor = bgColorsBody[0]
+  // offsetMenuBorder(menuBorder)
+  // console.log(msg)
   // }
 
-  // offsetMenuBorder(activeItem, menuBorder)
+  // function offsetMenuBorder (element, menuBorder) {
+  // const offsetActiveItem = element.getBoundingClientRect();
+  // const left = Math.floor(offsetActiveItem.left - menu.offsetLeft - (menuBorder.offsetWidth - offsetActiveItem.width) / 2) + "px";
+  // menuBorder.style.transform = `translate3d(${left}, 0 , 0)`;
+  // }
 
-  // window.addEventListener('resize', () => {
-  //   offsetMenuBorder(activeItem, menuBorder)
-  //   menu.style.setProperty('--timeOut', 'none')
+  // offsetMenuBorder(menuBorder)
+
+  // menuItems.forEach((item, index) => {
+  //   item.addEventListener("click", () => clickItem(item, index));
   // })
+
+  // window.addEventListener("resize", () => {
+  //   offsetMenuBorder(activeItem, menuBorder);
+  //   menu.style.setProperty("--timeOut", "none");
+  // });
+
+  function changeBackground (msg) {
+    console.log(msg)
+  }
 
   return (
     <Container>
       <Navbar>
-        <Item color='#ff8c00' onClick={() => clickItem(item, index)}>
-          <svg className='icon' viewBox='0 0 24 24'>
+        <Item to='/' color='#ff8c00'>
+          <Icon viewBox='0 0 24 24'>
             <path d='M3.8,6.6h16.4' />
             <path d='M20.2,12.1H3.8' />
             <path d='M3.8,17.5h16.4' />
-          </svg>
+          </Icon>
         </Item>
 
-        <Item color='#f54888'>
+        <Item to='/hiragana' color='#f54888' isActive={() => changeBackground('prout')}>
           <Icon viewBox='0 0 24 24'>
             <path d='M6.7,4.8h10.7c0.3,0,0.6,0.2,0.7,0.5l2.8,7.3c0,0.1,0,0.2,0,0.3v5.6c0,0.4-0.4,0.8-0.8,0.8H3.8C3.4,19.3,3,19,3,18.5v-5.6c0-0.1,0-0.2,0.1-0.3L6,5.3C6.1,5,6.4,4.8,6.7,4.8z' />
             <path d='M3.4,12.9H8l1.6,2.8h4.9l1.5-2.8h4.6' />
           </Icon>
         </Item>
 
-        <Item color='#4343f5'>
+        <Item to='/test' color='#4343f5'>
           <Icon viewBox='0 0 24 24'>
             <path d='M3.4,11.9l8.8,4.4l8.4-4.4' />
             <path d='M3.4,16.2l8.8,4.5l8.4-4.5' />
@@ -166,7 +185,7 @@ export default function Layout () {
           </Icon>
         </Item>
 
-        <Item color='#e0b115'>
+        <Item to='/page4' color='#e0b115'>
           <Icon viewBox='0 0 24 24'>
             <path d='M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1C3.9,4.4,4.4,3.9,5.1,3.9z' />
             <path d='M4.2,9.3h15.6' />
@@ -174,7 +193,7 @@ export default function Layout () {
           </Icon>
         </Item>
 
-        <Item color='#65ddb7'>
+        <Item to='/page5' color='#65ddb7'>
           <Icon viewBox='0 0 24 24'>
             <path d='M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1C3.9,4.4,4.4,3.9,5.1,3.9z' />
             <path d='M5.5,20l9.9-9.9l4.7,4.7' />
@@ -192,11 +211,6 @@ export default function Layout () {
           </svg>
         </SVGContainer>
       </Navbar>
-
-      {/*
-         <Link to='/'>Home</Link>
-         <Link to='/hiragana'>Hiragana</Link>
-       */}
 
       <Main>
         <Outlet />
