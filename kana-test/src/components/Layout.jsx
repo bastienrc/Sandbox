@@ -1,7 +1,8 @@
+import { useState } from 'react'
 import { Outlet, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-const bgColorsBody = ['#ffb457', '#ff96bd', '#9999fb', '#ffe797', '#cffff1']
+const bgColorsBody = ['#ffb457', '#1e293b', '#9999fb', '#ffe797', '#cffff1']
 
 const Container = styled.div`
   margin: 0;
@@ -9,8 +10,6 @@ const Container = styled.div`
   overflow: hidden;
   align-items: baseline;
   justify-content: center;
-  /* background-color: ${bgColorsBody[0]}; */
-  background-color: rgb(30 41 59);
   -webkit-tap-highlight-color: transparent;
   transition: background-color .7s;
 `
@@ -122,14 +121,12 @@ const Main = styled.div`
   margin: auto;
   width: 80%;
   height: 50%;
-  /* background: #fff; */
   color: #fff;
   text-align: center;
 `
 
 export default function Layout () {
   // const body = document.getElementById('main')
-  // const bgColorsBody = ['#ffb457', '#ff96bd', '#9999fb', '#ffe797', '#cffff1']
   // const menu = body.querySelector('.menu')
   // const menuBorder = menu.querySelector('.menu__border')
 
@@ -158,14 +155,16 @@ export default function Layout () {
   //   menu.style.setProperty("--timeOut", "none");
   // });
 
-  function changeBackground (msg) {
-    console.log(msg)
+  const [bgColor, setBgColor] = useState(bgColorsBody[0])
+
+  const changeBackground = (color) => {
+    setBgColor(color)
   }
 
   return (
-    <Container>
+    <Container style={{ backgroundColor: bgColor }}>
       <Navbar>
-        <Item to='/' color='#ff8c00'>
+        <Item to='/' color={bgColorsBody[0]} onClick={() => changeBackground(bgColorsBody[0])}>
           <Icon viewBox='0 0 24 24'>
             <path d='M3.8,6.6h16.4' />
             <path d='M20.2,12.1H3.8' />
@@ -173,14 +172,14 @@ export default function Layout () {
           </Icon>
         </Item>
 
-        <Item to='/hiragana' color='#f54888' isActive={() => changeBackground('prout')}>
+        <Item to='/hiragana' color={bgColorsBody[1]} isActive={() => changeBackground('prout')} onClick={() => changeBackground(bgColorsBody[1])}>
           <Icon viewBox='0 0 24 24'>
             <path d='M6.7,4.8h10.7c0.3,0,0.6,0.2,0.7,0.5l2.8,7.3c0,0.1,0,0.2,0,0.3v5.6c0,0.4-0.4,0.8-0.8,0.8H3.8C3.4,19.3,3,19,3,18.5v-5.6c0-0.1,0-0.2,0.1-0.3L6,5.3C6.1,5,6.4,4.8,6.7,4.8z' />
             <path d='M3.4,12.9H8l1.6,2.8h4.9l1.5-2.8h4.6' />
           </Icon>
         </Item>
 
-        <Item to='/test' color='#4343f5'>
+        <Item to='/test' color={bgColorsBody[2]} onClick={() => changeBackground(bgColorsBody[2])}>
           <Icon viewBox='0 0 24 24'>
             <path d='M3.4,11.9l8.8,4.4l8.4-4.4' />
             <path d='M3.4,16.2l8.8,4.5l8.4-4.5' />
@@ -188,7 +187,7 @@ export default function Layout () {
           </Icon>
         </Item>
 
-        <Item to='/page4' color='#e0b115'>
+        <Item to='/page4' color={bgColorsBody[3]} onClick={() => changeBackground(bgColorsBody[3])}>
           <Icon viewBox='0 0 24 24'>
             <path d='M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1C3.9,4.4,4.4,3.9,5.1,3.9z' />
             <path d='M4.2,9.3h15.6' />
@@ -196,7 +195,7 @@ export default function Layout () {
           </Icon>
         </Item>
 
-        <Item to='/page5' color='#65ddb7'>
+        <Item to='/page5' color={bgColorsBody[4]} onClick={() => changeBackground(bgColorsBody[4])}>
           <Icon viewBox='0 0 24 24'>
             <path d='M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1C3.9,4.4,4.4,3.9,5.1,3.9z' />
             <path d='M5.5,20l9.9-9.9l4.7,4.7' />
