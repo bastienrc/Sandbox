@@ -1,6 +1,19 @@
-# Sandbox
+# Sandbox Frontend
 
-Mes expérimentations avec React
+Mes expérimentations avec Javascript, Typescript, React, Tailwind, ...
+
+## 19 Janvier 2023
+
+- Réorganisation et tests de petits trucs en Javascript (Hover et Notification).
+
+## 10 Janvier 2023
+
+- Ajout de pages à kana-test
+- Changement de couleur sur kana-test
+
+## 1 Décembre 2022
+
+- Correction mineure sur kana-test
 
 ## 22 Novembre 2022
 
