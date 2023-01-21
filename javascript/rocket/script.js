@@ -44,7 +44,7 @@ const createScene = () => {
   window.addEventListener("resize", handleWindowResize, false);
 
   let loader = new THREE.GLTFLoader();
-  loader.load("https://www.stivaliserna.com/assets/rocket/rocket.gltf",
+  loader.load("rocket.gltf",
     (gltf) => {
       rocket = gltf.scene;
       rocket.position.y = 50;
