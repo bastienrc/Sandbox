@@ -4,6 +4,7 @@ Mes expérimentations avec Javascript, Typescript, React, Tailwind, CSS (Grid, F
 
 ## 23 Janvier 2023
 
+- [CSS Grid : Coder une liste qui passe bien à la ligne comme il faut (satisfaisant)](https://www.youtube.com/watch?v=o5nD0BB7uH0) par Le Designer du Web - École du Web
 - Test d'une animation en SVG
 
 ## 22 Janvier 2023
