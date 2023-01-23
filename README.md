@@ -2,6 +2,10 @@
 
 Mes expérimentations avec Javascript, Typescript, React, Tailwind, CSS (Grid, Flexbox, Animation), ...
 
+## 23 Janvier 2023
+
+- Test d'une animation en SVG
+
 ## 22 Janvier 2023
 
 - [Créer des formes en CSS](https://www.youtube.com/watch?v=PkI435SjMcI) par Le Designer du Web - École du Web
