@@ -1,0 +1,86 @@
+body {
+  background-color: #F2EBCB;
+  text-align: justify;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+h1, h2 {
+  color: #AD2929;
+  text-align: center;
+  font-family: 'Alex Brush', cursive;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  margin: -4rem 0 3rem 0;
+  font-size: 3rem;
+  /*opacity: 0.8;*/
+}
+/*
+#tribute {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+/* Photo ********************************/
+figure {
+  float: left;
+  margin: 1vmin 3vmin;
+  padding: 3vmin;
+  background: white;
+  width: 20vw;
+  border-radius: .5vmin;
+  box-shadow: 0 0 1vmin rgba(0,0,0,.75), 0 0 .5vmin rgba(0,0,0,.5);
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+img {
+  display: block;
+}
+
+#image {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Tribute-info *************************/
+#tribute-info {
+  margin: 0 5vmin 0 3vmin;
+  Line-Height: 1.5rem;
+}
+
+.lettrine:first-letter {
+  font-family: 'Alex Brush', cursive;
+  font-size: 3.5rem;
+  padding-right:0.6rem;
+  float:left;
+  color: #AD2929;
+}
+
+.infoplus{
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+/* Footer *******************************/
+hr {
+  clear:both;
+  display: inline-block;
+  margin-top: 2vmin;
+  width: 95%;
+  height: 1px;
+  border: 0;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0), rgba(173,41,41,1), rgba(0,0,0,0));
+}
+
+#footer {
+  text-align: center;
+}
