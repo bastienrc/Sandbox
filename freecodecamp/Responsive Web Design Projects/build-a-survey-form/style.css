@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient( 115deg, rgba(58, 158, 83, 0.7), rgba(144, 206, 136, 0.6) ), url('https://fotomelia.com/wp-content/uploads/edd/2015/07/internet-informatique-site-web-ordinateur-images-photos-gratuites-1560x1040.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main {
+  max-width: 800px;
+  padding: 0 3rem;
+  margin: 3rem auto;
+}
+
+#title {
+  text-align: center;
+  font-size: 2em;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+form {
+  background-color: #1e4905c9;
+  padding: 1rem 3rem;
+  margin: 3rem auto;
+  border-radius: .5rem;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.elt {
+  margin: 1rem 0;
+}
+
+.list label {
+  display: block;
+}
+
+label {
+  display: inline-block;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.indice {
+  font-size: 0.7rem;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 0px;
+  color: #949494;
+  background-color: #fff;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea,
+select,
+fieldset {
+  width : 100%;
+}
+
+input#submit {
+  width: 100%;
+  margin: 1rem 0;
+  background-color: #083514;
+  color: White;
+}
+
+input#submit:hover {
+  background-color: White;
+  color: #083514;
+}
