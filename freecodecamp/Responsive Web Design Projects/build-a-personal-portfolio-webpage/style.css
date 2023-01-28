@@ -1,0 +1,45 @@
+body {
+  font-family: "Special Elite", cursive;
+  text-align: center;
+}
+
+#welcome-section {
+  height: 100vh;
+}
+
+.row {
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #1a5e25;
+  font-size: 3em;
+}
+
+#about {
+  padding-top: 10em;
+}
+
+input,
+textarea {
+  margin: 5px;
+  border: 1px solid grey;
+  font-size: 2em;
+}
+
+textarea {
+  min-height: 15em;
+}
+
+@media only screen and (max-width: 367px) {
+  /* FIXME */
+  .contact-details {
+    border: 2px solid #90c695;
+    border-radius: 0;
+    width: 90px;
+    height: 20px;
+    padding: 10px;
+    line-height: normal;
+  }
+}
