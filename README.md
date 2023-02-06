@@ -2,6 +2,15 @@
 
 Mes expérimentations avec Javascript, Typescript, React, Tailwind, CSS (Grid, Flexbox, Animation), ...
 
+## 6 Férier 2023
+
+- Bouton Flashy
+- Bookmarks, tests en cours
+
+## 28 Janvier 2023
+
+- Terminer les « Responsive Web Design Projects » du freeCodeCamp.
+
 ## 23 Janvier 2023
 
 - [CSS Grid : Coder une liste qui passe bien à la ligne comme il faut (satisfaisant)](https://www.youtube.com/watch?v=o5nD0BB7uH0) par Le Designer du Web - École du Web

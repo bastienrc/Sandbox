@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouton Flashy</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 0.5s;
+      color: whitesmoke;
+      border-radius: 10px;
+      border: 0;
+      background-size: 200%;
+    }
+
+    .btn-flashy {
+      background-image: linear-gradient(
+        to right,
+        #F00,
+        #0F0,
+        #00F
+      );
+    }
+
+    .btn-flashy:hover {
+      background-position: right;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="btn btn-flashy">Bouton Flashy</button>
+</body>
+
+</html>
