@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  grid-template-areas:
+    "quote-box"
+    "footer";
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#quote-box {
+  grid-area: quote-box;
+  width : 75%;
+  max-width: 800px;
+}
+
+#text {
+  position: relative;
+  padding: 5rem;
+  font-style: italic;
+  font-size: 2.5rem;
+  font-family: 'Tangerine', serif;
+  text-indent: 3rem;
+  text-align: justify;
+  color: #666;
+  quotes: "“" "”";
+}
+
+#text::before, #text::after {
+  position: absolute;
+  font-size: 8rem;
+  font-style: italic;
+  color: #ddd;
+}
+
+#text::before {
+  content: open-quote;
+  top: 0;
+  left: 0;
+}
+
+#text::after {
+  content: close-quote;
+  bottom: 0;
+  right: 0;
+}
+
+#action-quote {
+  margin: 0;
+}
+
+#tweet-quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #6bdcf8;
+}
+
+#new-quote {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #eee;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 0.5rem 30%;
+  color: #666;
+}
+
+#author {
+  padding: 0;
+  text-align: right;
+  color: #999;
+}
+
+footer {
+  grid-area: footer;
+}
