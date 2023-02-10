@@ -41,7 +41,8 @@
         "planbcoding.vscode-react-refactor",
         "styled-components.vscode-styled-components",
         "redhat.vscode-yaml",
-        "ritwickdey.LiveServer"
+        "ritwickdey.LiveServer",
+        "vitaliymaz.vscode-svg-previewer"
       ]
     }
   },
