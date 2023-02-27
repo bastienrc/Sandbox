@@ -10,6 +10,8 @@ services:
         # Append -bullseye or -buster to pin to an OS version.
         # Use -bullseye variants on local arm64/Apple Silicon.
         VARIANT: 16-bullseye
+    image: sandbox_react
+    container_name: sandbox_react
     volumes:
       - ..:/workspace:cached
 
@@ -21,11 +23,12 @@ services:
     # Uncomment the next line to use a non-root user for all processes.
     # user: node
 
-    # Use "forwardPorts" in **devcontainer.json** to forward an app port locally. 
+    # Use "forwardPorts" in **devcontainer.json** to forward an app port locally.
     # (Adding the "ports" property to this file will not forward from a Codespace.)
 
   db:
     image: mongo:latest
+    container_name: sandbox_react_db
     restart: unless-stopped
     volumes:
       - mongodb-data:/data/db
