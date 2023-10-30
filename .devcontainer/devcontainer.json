@@ -37,7 +37,9 @@
         "planbcoding.vscode-react-refactor",
         "redhat.vscode-yaml",
         "ritwickdey.LiveServer",
-        "vitaliymaz.vscode-svg-previewer"
+        "vitaliymaz.vscode-svg-previewer",
+        "dsznajder.es7-react-js-snippets",
+        "Prisma.prisma"
       ]
     }
   },
