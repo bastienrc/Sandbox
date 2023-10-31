@@ -1,7 +1,7 @@
-# Githread
-28 octobre 2023
+# Memo Githread
+Du 28 octobre 2023 au 31 octobre 2023
 
-Test des nouveautés de NextJS 14 avec le tuto de la chaîne « Melvynx • Apprendre à coder » : [MAÎTRISE NEXTJS 13 : Créer et deploy une app Full-Stack Modern en Juste 4 Heures ! by ](https://www.youtube.com/watch?v=g6RPzygnhho)
+Test des nouveautés de NextJS 14 avec le tuto de la chaîne « Melvynx • Apprendre à coder » : [MAÎTRISE NEXTJS 13 : Créer et deploy une app Full-Stack Modern en Juste 4 Heures ! by ](https://www.youtubbe.com/watch?v=g6RPzygnhho)
 
 ## Problème #1
 
@@ -29,6 +29,15 @@ Done in 0.46s.
 ```
 
 **Solution:** Le passage à Node@20 régle le problème.
+
+## ORM
+
+https://codelynx.notion.site/Code-Snippet-de-la-vid-o-NextJS-13-Clone-Thread-7f2d5c64fa794de390af6a83804227fe
+https://www.prisma.io
+https://env.t3.gg/docs/nextjs
+https://next-auth.js.org/getting-started/example
+https://authjs.dev/reference/adapter/prisma
+
 
 ## Ressources
 
