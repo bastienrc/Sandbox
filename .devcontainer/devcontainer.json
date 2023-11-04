@@ -10,6 +10,9 @@
   "customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
+      "settings": {
+        "editor.tabSize": 2
+      },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "dbaeumer.vscode-eslint",
@@ -52,7 +55,7 @@
 
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
-  
+
   "features": {
     "docker-from-docker": "20.10",
     "git": "os-provided"
