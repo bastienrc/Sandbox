@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "calendar-js": "^1.4.4"
+  }
+}
