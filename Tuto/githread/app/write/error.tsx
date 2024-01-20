@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 
 export default function Error({
   error,
-  reset,
+  reset
 }: {
   error: Error & { digest?: string }
   reset: () => void
@@ -19,8 +19,10 @@ export default function Error({
   return (
     <Alert className='my-4'>
       <AlertTriangle />
-      <AlertTitle>Non Connecter</AlertTitle>
-      <AlertDescription>Vous devez être connecter pour voir cette page.</AlertDescription>
+      <AlertTitle>Non Connecté</AlertTitle>
+      <AlertDescription>
+        Vous devez être connecté pour voir cette page.
+      </AlertDescription>
     </Alert>
   )
 }

@@ -6,8 +6,6 @@ import { ContentTextArea } from "@/src/features/post/ContentTextArea"
 import { PostLayout } from "@/src/features/post/PostLayout"
 import { User } from "@prisma/client"
 import { useRouter } from "next/navigation"
-import { ReactElement, JSXElementConstructor } from "react"
-import { ControllerRenderProps, ControllerFieldState, UseFormStateReturn } from "react-hook-form"
 import { z } from "zod"
 
 const Schema = z.object({
@@ -21,7 +19,7 @@ type WritePostFormProps = {
   onSubmit: (values: WritePostFormValues) => Promise<string>
 }
 
-export const WritePostForm = ({user, onSubmit}: WritePostFormProps) => {
+export const WritePostForm = ({ user, onSubmit }: WritePostFormProps) => {
   const form = useZodForm({
     schema: Schema
   })
@@ -29,16 +27,19 @@ export const WritePostForm = ({user, onSubmit}: WritePostFormProps) => {
 
   return (
     <PostLayout user={user}>
-      <Form form={form} onSubmit={async (values) => {
-        const postId = await onSubmit(values)
-        router.push(`/posts/${postId}`)
-      }}>
+      <Form
+        form={form}
+        onSubmit={async (values) => {
+          const postId = await onSubmit(values)
+          router.push(`/posts/${postId}`)
+        }}
+      >
         <FormField
           control={form.control}
           name="content"
           render={({ field }) => (
             <FormItem>
-              <ContentTextArea {...field} />
+              <ContentTextArea {...field} rows={3} />
               <FormMessage />
             </FormItem>
           )}
