@@ -11,36 +11,47 @@
     // Configure properties specific to VS Code.
     "vscode": {
       "settings": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.fontLigatures": true,
+        "editor.cursorBlinking": "solid",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit",
+          "source.organizeImports": "explicit"
+        },
+        "explorer.confirmDelete": false,
+        "explorer.confirmDragAndDrop": false,
+        "files.autoSave": "onFocusChange",
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "javascript.updateImportsOnFileMove.enabled": "always",
+        "files.exclude": {
+          "**/.git": true,
+          "**/.svn": true,
+          "**/.hg": true,
+          "**/CVS": true,
+          "**/.DS_Store": true,
+          "**/Thumbs.db": true,
+          "**/yarn.lock": true
+        }
       },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
+        "oderwat.indent-rainbow",
+        "esbenp.prettier-vscode",
+        "naumovs.color-highlight",
+        "ms-azuretools.vscode-docker",
+        "meganrogge.template-string-converter",
+        "usernamehw.errorlens",
         "dbaeumer.vscode-eslint",
         "bierner.emojisense",
         "formulahendry.auto-rename-tag",
-        "aaron-bond.better-comments",
-        "vincaslt.highlight-matching-tag",
         "PKief.material-icon-theme",
-        "xabikos.ReactSnippets",
-        "infeng.vscode-react-typescript",
         "ahmadawais.emoji-log-vscode",
         "waderyan.gitblame",
         "mhutchie.git-graph",
         "lamartire.git-indicators",
-        "ecmel.vscode-html-css",
-        "Zignd.html-css-class-completion",
-        "ManaSky.lorem-space",
-        "mongodb.mongodb-vscode",
-        "leizongmin.node-module-intellisense",
-        "christian-kohler.npm-intellisense",
-        "christian-kohler.path-intellisense",
-        "humao.rest-client",
-        "bradlc.vscode-tailwindcss",
         "Gruntfuggly.todo-tree",
-        "planbcoding.vscode-react-refactor",
-        "redhat.vscode-yaml",
-        "ritwickdey.LiveServer",
-        "vitaliymaz.vscode-svg-previewer",
         "dsznajder.es7-react-js-snippets",
         "Prisma.prisma"
       ]
