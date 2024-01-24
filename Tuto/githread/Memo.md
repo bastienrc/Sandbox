@@ -1,7 +1,9 @@
 # Memo Githread
-Du 28 octobre 2023 au 31 octobre 2023
 
-Test des nouveautés de NextJS 14 avec le tuto de la chaîne « Melvynx • Apprendre à coder » : [MAÎTRISE NEXTJS 13 : Créer et deploy une app Full-Stack Modern en Juste 4 Heures ! by ](https://www.youtubbe.com/watch?v=g6RPzygnhho)
+Du 28 octobre 2023 au 6 novembre 2023
+Et du 19 janvier 2024 au 24 janvier 2023
+
+Test des nouveautés de NextJS 14 avec le tuto de la chaîne « Melvynx • Apprendre à coder » : [MAÎTRISE NEXTJS 13 : Créer et deploy une app Full-Stack Modern en Juste 4 Heures !](https://www.youtube.com/watch?v=g6RPzygnhho)
 
 ## Problème #1
 
@@ -30,18 +32,21 @@ Done in 0.46s.
 
 **Solution:** Le passage à Node@20 régle le problème.
 
-## ORM
+## Problème #2
 
-https://codelynx.notion.site/Code-Snippet-de-la-vid-o-NextJS-13-Clone-Thread-7f2d5c64fa794de390af6a83804227fe
-https://www.prisma.io
-https://env.t3.gg/docs/nextjs
-https://next-auth.js.org/getting-started/example
-https://authjs.dev/reference/adapter/prisma
+À la partie sur l'ajout d'une **modal**, j'ai le message d'erreur : « Application error: a client-side exception has occurred (see the browser console for more information). ».
+Dans la video, vérification du code, il n'a pas d'erreur, donc redemarrer l'app, et cela fonctionne.
+C'est pas mon cas, l'erreur persiste.
 
+Erreur dans la console du navigateur: « React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundaryHandler. ».
+
+**Solution:**
+
+- Supprimer les dossiers : **node_modules** et **.next**.
+- Réinstaller tout avec **yarn install**.
+- Relancé **yarn dev**.
+- Eureka, ca fonctionne !
 
 ## Ressources
 
 - [ui.shadcn.com](https://ui.shadcn.com): Build your component library.
-
-
-

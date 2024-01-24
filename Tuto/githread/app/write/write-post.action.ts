@@ -1,20 +1,18 @@
-'use server'
+"use server";
 
+import { prisma } from "@/lib/prisma";
 import { getUser } from "@/src/query/user.query";
 import { WritePostFormValues } from "./WritePostForm";
-import { prisma } from "@/lib/prisma";
 
 export const createPost = async (values: WritePostFormValues) => {
-
-  console.log("Je suis sur le serveur !!!");
-  const user = await getUser()
+  const user = await getUser();
 
   const post = await prisma.post.create({
     data: {
       content: values.content,
-      userId: user.id
-    }
-  })
+      userId: user.id,
+    },
+  });
 
-  return post.id
-}
+  return post.id;
+};
