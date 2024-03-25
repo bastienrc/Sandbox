@@ -4,14 +4,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Démarrage
 
-Tout d'abord, lancer le serveur de développement :
+Tout d'abord, lancer le serveur de développement : `yarn dev`
 
-```bash
-yarn dev
-```
+Ouvrez : http://localhost:3000 avec votre navigateur pour voir le résultat.
 
-Ouvrez [http://localhost:3000](http://localhost:3000) avec votre navigateur pour voir le résultat.
+## Prisma
 
+**A Faire dans le dossier _prisma_**
+
+Run : `npx prisma studio` et aller sur http://localhost:5555
+
+Réinialitser la BDD : `yarn prisma:seed`
 
 ## Ressources
 

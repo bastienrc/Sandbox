@@ -30,9 +30,16 @@ export const getUser = async () => {
 };
 
 export const getUserProfile = async (userId: string) => {
-  return prisma.user.findUnique({
+  return prisma.user.findFirst({
     where: {
-      id: userId,
+      OR: [
+        {
+          username: userId,
+        },
+        {
+          id: userId,
+        },
+      ],
     },
     select: {
       ...userQuery,
@@ -68,6 +75,25 @@ export const getUserProfile = async (userId: string) => {
   });
 };
 
+export const getUserEdit = async () => {
+  const session = await getAuthSession();
+
+  if (!session) {
+    throw new Error("No session");
+  }
+
+  return prisma.user.findUniqueOrThrow({
+    where: {
+      id: session.user.id,
+    },
+    select: userQuery,
+  });
+};
+
 export type UserProfile = NonNullable<
   Prisma.PromiseReturnType<typeof getUserProfile>
+>;
+
+export type UserEdit = NonNullable<
+  Prisma.PromiseReturnType<typeof getUserEdit>
 >;
