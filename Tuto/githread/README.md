@@ -14,7 +14,13 @@ Ouvrez : http://localhost:3000 avec votre navigateur pour voir le résultat.
 
 Run : `npx prisma studio` et aller sur http://localhost:5555
 
-Réinialitser la BDD : `yarn prisma:seed`
+## Reinitialiser la BDD
+
+Effacer le dossier prisma
+`npx prisma init --datasource-provider sqlite`
+restaurer le schema.prisma et seed.ts
+`prisma migrate dev`
+`yarn prisma:seed`
 
 ## Ressources
 
