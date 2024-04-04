@@ -13,7 +13,9 @@ export const Post = ({ post }: PostProps) => {
   return (
     <PostLayout user={post.user} postId={post.id} createdAt={post.createdAt}>
       <Link href={`/posts/${post.id}`} className="text-sm text-foreground">
-        {post.content}
+        {post.content.split("\n").map((c, i) => (
+          <p key={i}>{c}</p>
+        ))}
       </Link>
       <div className="flex items-center gap-2">
         <LikeButton postId={post.id} isLiked={post.likes.length > 0} />
