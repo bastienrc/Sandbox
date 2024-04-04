@@ -3,7 +3,7 @@ import { Post } from "@/src/features/post/Post";
 import { getPost } from "@/src/query/post.query";
 import { getUser } from "@/src/query/user.query";
 import { notFound } from "next/navigation";
-import { createReply } from "./write-post.action";
+import { createReply } from "./write-reply.action";
 
 export default async function PostReply({
   params,
@@ -19,7 +19,6 @@ export default async function PostReply({
     return notFound();
   }
 
-  // const post =
   return (
     <div>
       <Post post={post} />
@@ -27,6 +26,7 @@ export default async function PostReply({
         user={user}
         onSubmit={async (values) => {
           "use server";
+          console.log("onSubmit createReply");
           return createReply(post.id, values);
         }}
       />

@@ -1,4 +1,4 @@
-import { createReply } from "@/app/posts/[postId]/reply/write-post.action";
+import { createReply } from "@/app/posts/[postId]/reply/write-reply.action";
 import { getUser } from "@/src/query/user.query";
 import { ReplyModal } from "./ReplyModal";
 

@@ -1,8 +1,8 @@
 "use server";
 
 import { getAuthSession } from "@/lib/auth";
-import { ProfileFormType } from "./ProfileForm";
 import { prisma } from "@/lib/prisma";
+import { ProfileFormType } from "./ProfileForm";
 
 export const editProfile = async (values: ProfileFormType) => {
   const session = await getAuthSession();
@@ -15,12 +15,8 @@ export const editProfile = async (values: ProfileFormType) => {
     where: {
       id: session.user.id,
     },
-    data: {
-      ...values,
-    },
+    data: values,
   });
-
-  await new Promise((resolve) => setTimeout(resolve, 500));
 
   return "/profile";
 };

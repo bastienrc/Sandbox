@@ -18,7 +18,7 @@ export const generateMetadata = async ({
   }
 
   return {
-    title: `${user.name} (${user?.username})`,
+    title: `${user.name} (${user.username})`,
   };
 };
 
@@ -36,7 +36,7 @@ export default async function UserPage({ params }: PageParams) {
     notFound();
   }
 
-  const isFollowing = session?.user.id
+  const isFollower = session?.user.id
     ? await prisma.follow.findFirst({
         where: {
           followerId: session?.user?.id,
@@ -59,7 +59,6 @@ export default async function UserPage({ params }: PageParams) {
             variant="outline"
             formAction={async () => {
               "use server";
-
               if (!session?.user.id) {
                 return;
               }
@@ -67,7 +66,7 @@ export default async function UserPage({ params }: PageParams) {
               await followUser(params.userId);
             }}
           >
-            {isFollowing ? "Unfollow" : "Follow"}
+            {isFollower ? "Unfollow" : "Follow"}
           </Button>
         </form>
       </Profile>

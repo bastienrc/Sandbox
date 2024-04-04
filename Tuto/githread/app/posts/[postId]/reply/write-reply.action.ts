@@ -3,7 +3,6 @@
 import { WritePostFormValues } from "@/app/write/WritePostForm";
 import { prisma } from "@/lib/prisma";
 import { getUser } from "@/src/query/user.query";
-import { revalidatePath } from "next/cache";
 
 export const createReply = async (
   postId: string,
@@ -19,8 +18,7 @@ export const createReply = async (
     },
   });
 
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  revalidatePath(`/posts/${postId}`);
+  // revalidatePath(`/posts/${postId}`);
 
   return postId;
 };

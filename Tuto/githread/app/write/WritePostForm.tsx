@@ -37,8 +37,11 @@ export const WritePostForm = ({ user, onSubmit }: WritePostFormProps) => {
         form={form}
         onSubmit={async (values) => {
           const postId = await onSubmit(values);
-          router.push(`/posts/${postId}`);
-          router.refresh();
+          if (postId) {
+            window.location.href = `${window.location.origin}/posts/${postId}`;
+            router.push(`/posts/${postId}`);
+            router.refresh();
+          }
         }}
       >
         <FormField
