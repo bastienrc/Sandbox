@@ -33,7 +33,7 @@ export default async function ProfilePage() {
           </Link>
         </form>
       </Profile>
-      <div className="divide-y divide-accent border-t border-accent mt-4">
+      <div className="mt-4 divide-y divide-accent border-t border-accent">
         {user.posts.map((post) => (
           <Post key={post.id} post={post} />
         ))}

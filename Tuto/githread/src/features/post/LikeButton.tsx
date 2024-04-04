@@ -16,7 +16,7 @@ export const LikeButton = ({
   const [isPending, startTransition] = useTransition();
   return (
     <button
-      className={clsx("rounded-md hover:bg-accent flex gap-1 items-center", {
+      className={clsx("flex items-center gap-1 rounded-md hover:bg-accent", {
         "text-red-500": isLiked,
       })}
       onClick={() => startTransition(() => likeAction(postId))}

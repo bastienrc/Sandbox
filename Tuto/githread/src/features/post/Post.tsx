@@ -15,7 +15,7 @@ export const Post = ({ post }: PostProps) => {
       <Link href={`/posts/${post.id}`} className="text-sm text-foreground">
         {post.content}
       </Link>
-      <div className="flex gap-2 items-center">
+      <div className="flex items-center gap-2">
         <LikeButton postId={post.id} isLiked={post.likes.length > 0} />
         <Link
           href={`/posts/${post.id}/reply`}
@@ -26,14 +26,14 @@ export const Post = ({ post }: PostProps) => {
       </div>
       <div>
         <Link
-          className="text-muted-foreground text-sm"
+          className="text-sm text-muted-foreground"
           href={`/posts/${post.id}`}
         >
           {post._count.likes} likes
         </Link>
         {" ~ "}
         <Link
-          className="text-muted-foreground text-sm"
+          className="text-sm text-muted-foreground"
           href={`/posts/${post.id}`}
         >
           {post._count.replies} comments

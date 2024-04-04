@@ -6,8 +6,8 @@ export default async function EditUser() {
   const user = await getUserEdit();
 
   return (
-    <div className="h-full container flex items-center">
-      <div className="bg-card border rounded-md border-border p-4 flex-1">
+    <div className="container flex h-full items-center">
+      <div className="flex-1 rounded-md border border-border bg-card p-4">
         <ProfileForm user={user} onSubmit={editProfile} />
       </div>
     </div>

@@ -12,8 +12,8 @@ export const Profile = ({
   children,
 }: PropsWithChildren<{ user: UserProfile }>) => {
   return (
-    <div className="mt-4 container">
-      <div className="flex gap-2 items-start justify-between">
+    <div className="container mt-4">
+      <div className="flex items-start justify-between gap-2">
         <div className="flex flex-col gap-0.5">
           <h3 className="text-2xl font-bold">{user.name}</h3>
           <p>{user.username}</p>
@@ -34,7 +34,7 @@ export const Profile = ({
           <p className="text-muted-foreground">no bio</p>
         )}
       </div>
-      <div className="flex items-center gap-2 mt-4">
+      <div className="mt-4 flex items-center gap-2">
         <div className="flex -space-x-2">
           {user.followeds.map((followed) => (
             <Avatar

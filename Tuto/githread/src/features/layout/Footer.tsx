@@ -5,7 +5,7 @@ import { buttonVariants } from '@/components/ui/button'
 
 export const Footer = () => {
   return (
-    <div className="py-2 flex justify-between container gap-1 fixed bottom-0 left-0 right-0 bg-background max-w-lg m-auto border-t border-accent">
+    <div className="container fixed inset-x-0 bottom-0 m-auto flex max-w-lg justify-between gap-1 border-t border-accent bg-background py-2">
       <Link
         href="/"
         className={clsx(

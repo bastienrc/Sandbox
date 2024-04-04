@@ -20,26 +20,26 @@ export const PostPlaceholder = () => {
         <Skeleton className="h-6 w-full" />
         <Skeleton className="h-6 w-1/2" />
         <Skeleton className="h-6 w-full" />
-        <div className="flex gap-4 items-center">
+        <div className="flex items-center gap-4">
           <button
             className={clsx(
-              "rounded-md hover:bg-accent flex gap-1 items-center",
+              "flex items-center gap-1 rounded-md hover:bg-accent",
               {}
             )}
           >
             <Heart size={20} />
           </button>
-          <span className="rounded-md hover:bg-accent flex gap-1 items-center">
+          <span className="flex items-center gap-1 rounded-md hover:bg-accent">
             <MessageCircle size={20} />
           </span>
         </div>
         <div>
-          <span className="text-muted-foreground text-sm">
-            <Skeleton className="h-6 w-4 inline-block" /> likes
+          <span className="text-sm text-muted-foreground">
+            <Skeleton className="inline-block h-6 w-4" /> likes
           </span>
           {" ‧ "}
-          <span className="text-muted-foreground text-sm">
-            <Skeleton className="h-6 w-4 inline-block" /> replies
+          <span className="text-sm text-muted-foreground">
+            <Skeleton className="inline-block h-6 w-4" /> replies
           </span>
         </div>
       </div>

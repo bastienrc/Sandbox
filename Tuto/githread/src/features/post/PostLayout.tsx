@@ -32,7 +32,7 @@ export const PostLayout = ({
       <div className="ml-4 flex w-full flex-col gap-2">
         <Link href={`/users/${user.id}`}>
           <div className="flex flex-row items-center gap-2">
-            <p className="text-sm text-card-foreground mr-auto">{user.name}</p>
+            <p className="mr-auto text-sm text-card-foreground">{user.name}</p>
             {createdAt ? (
               <div className="text-sm text-muted-foreground">
                 {formatDate(createdAt)}

@@ -21,11 +21,11 @@ type LayoutProps = {
 export default function RootLayout({ children, modal }: LayoutProps) {
   return (
     <html lang="en" className="h-full">
-      <body className={clsx(inter.className, "bg-background h-full")}>
+      <body className={clsx(inter.className, "h-full bg-background")}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex flex-col h-full">
+          <div className="flex h-full flex-col">
             <Header />
-            <div className="flex-1 max-w-lg m-auto py-16 w-full">
+            <div className="m-auto w-full max-w-lg flex-1 py-16">
               {children}
             </div>
             <Footer />

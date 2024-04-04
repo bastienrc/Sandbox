@@ -7,9 +7,9 @@ export const Header = async () => {
   const session = await getAuthSession()
 
   return (
-    <header className="border-b border-b-accent fixed top-0 z-20 bg-background w-full">
-      <div className="container flex items-center py-2 max-w-lg m-auto gap-1">
-        <h2 className="text-2xl font-bold mr-auto">Githread</h2>
+    <header className="fixed top-0 z-20 w-full border-b border-b-accent bg-background">
+      <div className="container m-auto flex max-w-lg items-center gap-1 py-2">
+        <h2 className="mr-auto text-2xl font-bold">Githread</h2>
         {session?.user ? <UserProfile /> : <LoginButton /> }
         <ThemeToggle />
       </div>
