@@ -19,7 +19,7 @@ export default function Error({
   return (
     <Alert className="my-4">
       <AlertTriangle />
-      <AlertTitle>Vous n'êtes pas connecté</AlertTitle>
+      <AlertTitle>Vous n&apos;êtes pas connecté</AlertTitle>
       <AlertDescription>
         Vous devez vous connecter pour accéder à cette page.
       </AlertDescription>

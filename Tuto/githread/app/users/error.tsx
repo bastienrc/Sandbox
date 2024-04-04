@@ -21,7 +21,7 @@ export default function Error({
       <AlertTriangle />
       <AlertTitle>Cet utilisateur est introuvable</AlertTitle>
       <AlertDescription>
-        L'utilisateur rechercher n'existe pas.
+        L&apos;utilisateur rechercher n&apos;existe pas.
       </AlertDescription>
     </Alert>
   );

@@ -21,7 +21,7 @@ export default function Error({
       <AlertTriangle />
       <AlertTitle>Oups !!!</AlertTitle>
       <AlertDescription>
-        Revenez plus tard, le temps que l'on repare se Schmilblic.
+        Revenez plus tard, le temps que l&apos;on repare se Schmilblic.
       </AlertDescription>
     </Alert>
   );
