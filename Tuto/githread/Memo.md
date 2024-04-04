@@ -1,9 +1,5 @@
 # Memo Githread
 
-Du 28 octobre 2023 au 6 novembre 2023
-Et du 19 janvier 2024 au 24 janvier 2024
-Et du 25 mars au 29 mars 2024
-
 Test des nouveautés de NextJS 14 avec le tuto de la chaîne « Melvynx • Apprendre à coder » : [MAÎTRISE NEXTJS 13 : Créer et deploy une app Full-Stack Modern en Juste 4 Heures !](https://www.youtube.com/watch?v=g6RPzygnhho)
 
 ## Problème #1
