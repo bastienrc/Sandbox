@@ -23,5 +23,5 @@ export const formatDate = (date: Date | string) => {
   if (diffInMinutes > 0) {
     return `${diffInMinutes}m`;
   }
-  return 'now';
+  return "now";
 };

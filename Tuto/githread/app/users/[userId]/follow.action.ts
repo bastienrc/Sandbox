@@ -1,8 +1,8 @@
-'use server';
+"use server";
 
-import { prisma } from '@/lib/prisma';
-import { getUser } from '@/src/query/user.query';
-import { revalidatePath } from 'next/cache';
+import { prisma } from "@/lib/prisma";
+import { getUser } from "@/src/query/user.query";
+import { revalidatePath } from "next/cache";
 
 export const followUser = async (userId: string) => {
   const user = await getUser();

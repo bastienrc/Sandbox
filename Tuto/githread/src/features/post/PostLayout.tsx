@@ -1,10 +1,10 @@
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { PostHome } from "@/src/query/post.query";
-import { PropsWithChildren } from "react";
-import { MoreHorizontal } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { formatDate } from "@/lib/date";
-import Link from "next/link";
+import { PostHome } from "@/src/query/post.query";
 import clsx from "clsx";
+import { MoreHorizontal } from "lucide-react";
+import Link from "next/link";
+import { PropsWithChildren } from "react";
 
 type PostLayoutProps = PropsWithChildren<{
   user: PostHome["user"];

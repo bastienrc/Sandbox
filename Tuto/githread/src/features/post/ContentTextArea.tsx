@@ -1,18 +1,23 @@
-'use client';
+"use client";
 
-import clsx from 'clsx';
-import { ChangeEvent, ComponentPropsWithoutRef, forwardRef, useRef } from 'react';
+import clsx from "clsx";
+import {
+  ChangeEvent,
+  ComponentPropsWithoutRef,
+  forwardRef,
+  useRef,
+} from "react";
 
 export const ContentTextArea = forwardRef<
   HTMLTextAreaElement,
-  ComponentPropsWithoutRef<'textarea'>
+  ComponentPropsWithoutRef<"textarea">
 >(({ onChange, className, rows = 1, ...props }, ref) => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const handleChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
     const textarea = e.currentTarget;
     if (textarea) {
-      textarea.style.height = 'auto';
+      textarea.style.height = "auto";
       textarea.style.height = `${textarea.scrollHeight + 2}px`;
     }
   };
@@ -25,10 +30,13 @@ export const ContentTextArea = forwardRef<
         onChange?.(e);
       }}
       rows={rows}
-      className={clsx(className, 'w-full resize-none bg-transparent outline-none')}
+      className={clsx(
+        className,
+        "w-full resize-none bg-transparent outline-none"
+      )}
       {...props}
     />
   );
 });
 
-ContentTextArea.displayName = 'ContentTextArea';
+ContentTextArea.displayName = "ContentTextArea";

@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { useRouter } from 'next/navigation';
-import { useTransition } from 'react';
-import { followUser } from './follow.action';
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import { useTransition } from "react";
+import { followUser } from "./follow.action";
 
 export const FollowButton = ({
   isFollowing,
@@ -30,7 +30,7 @@ export const FollowButton = ({
         });
       }}
     >
-      {isFollowing ? 'Unfollow' : 'Follow'}
+      {isFollowing ? "Unfollow" : "Follow"}
     </Button>
   );
 };
