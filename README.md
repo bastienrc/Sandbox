@@ -1,71 +1,60 @@
-# Sandbox Frontend
+# Sandbox
 
-Mes expérimentations avec Javascript, Typescript, React, Tailwind, CSS (Grid, Flexbox, Animation), ...
+Mes expérimentations avec le HTML, CSS, Javascript, Typescript, ReactJs, NextJS et TailwindCSS.
 
-## 6 Férier 2023
-
-- Bouton Flashy
-- Bookmarks, tests en cours
-
-## 28 Janvier 2023
-
-- Terminer les « Responsive Web Design Projects » du freeCodeCamp.
-
-## 23 Janvier 2023
-
-- [CSS Grid : Coder une liste qui passe bien à la ligne comme il faut (satisfaisant)](https://www.youtube.com/watch?v=o5nD0BB7uH0) par Le Designer du Web - École du Web
-- Test d'une animation en SVG
-
-## 22 Janvier 2023
-
-- [Créer des formes en CSS](https://www.youtube.com/watch?v=PkI435SjMcI) par Le Designer du Web - École du Web
-
-## 21 Janvier 2023
-
-- [Recreating the GitHub Contribution Graph with CSS Grid Layout](https://bitsofco.de/github-contribution-graph-css-grid) by Bitsofco.de
-- Cleanup
-- Bugfix Rocket
-
-## 19 Janvier 2023
-
-- Réorganisation et tests de petits trucs en Javascript (Hover et Notification).
-
-## 10 Janvier 2023
-
-- Ajout de pages à kana-test
-- Changement de couleur sur kana-test
-
-## 1 Décembre 2022
-
-- Correction mineure sur kana-test
-
-## 22 Novembre 2022
-
-- Mise à jour de mon environnement de développement avec dev container
-- Delete dossier typescript
-
-## 11 Octobre 2022
-
-- Ajout de mon environnement de développement avec dev container
-- Move sandbox/sandbox => sandbox/typescript
-- Update/Upgrade sandbox/typescript
-
-## 12 Juillet 2022
-
-Je commence Typescript et je continue le menu, c'est compliqué de convertir un code js en react.
-
-## 8 avril 2022: KanaTest
-
-[Build Your Own JAPANESE Learning App using React JS | Styled with Tailwind CSS (22:47)](https://www.youtube.com/watch?v=fM3qHaQrRHU) by Tyler Potts
+## Init Projet
 
 ```sh
-yarn create vite
+npx create-next-app@latest
 ```
 
-**Vite** me semble plus rapide que **create-react-app**.
+## Globals.css
 
-## 5 avril 2022 : Rocket
+```css
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 24.6 95% 53.1%;
+    --primary-foreground: 60 9.1% 97.8%;
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 24.6 95% 53.1%;
+    --radius: 0.5rem;
+  }
 
-[Build a Rocket 3D Website // Three.js Beginner's Tutorial (22:53)](https://www.youtube.com/watch?v=muVjaCjYSGU) by Learndailyteam (3 avr. 2022)
-
-La librairie [Three.js](https://threejs.org/) permet de mettre des objets 3D dans le navigateur. Reste plus qu'a apprendre [Blender](/Blender/README.md)
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+    --primary: 20.5 90.2% 48.2%;
+    --primary-foreground: 60 9.1% 97.8%;
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 20.5 90.2% 48.2%;
+  }
+}
+```
