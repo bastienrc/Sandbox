@@ -29,3 +29,35 @@
   border: none;
   border-radius: 5px;
 }
+
+.resize {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background: #caf8e3;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 0.25rem;
+}
+
+.resize div {
+  margin: 1rem;
+  width: 200px;
+  height: 100px;
+  background: #27e992;
+}
+
+.block1 {
+  resize: vertical;
+  overflow: hidden;
+}
+
+.block2 {
+  resize: Horizontal;
+  overflow: hidden;
+}
+
+.block3 {
+  resize: both;
+  overflow: hidden;
+}
