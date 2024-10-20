@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Test : IMC</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calcul d'<span title="Indice de Masse Corporelle">IMC</span></h1>
+      <form>
+        <div class="inputs-container">
+          <div class="input-group">
+            <label for="height">Votre taille en centimètres</label>
+            <input
+              type="number"
+              class="height"
+              placeholder="Votre taille en centimètres"
+            />
+          </div>
+          <div class="input-group">
+            <label for="weight">Votre poids en Kg</label>
+            <input
+              type="number"
+              class="weight"
+              placeholder="Votre poids en Kg"
+            />
+          </div>
+        </div>
+        <button>Calculer en IMC</button>
+      </form>
+      <div class="info">
+        <p id="bmiValue">0</p>
+        <p id="result">En attente du résulat ...</p>
+      </div>
+    </div>
+  </body>
+</html>
