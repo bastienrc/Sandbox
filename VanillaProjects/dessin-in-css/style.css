@@ -7,10 +7,12 @@
 body {
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   background-color: #85ffbd;
   background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-  padding: 0 50px;
+  gap: 2rem;
 }
 
 .carre {
@@ -27,7 +29,6 @@ body {
   border-right: 100px solid transparent;
   border-bottom: 100px solid green;
   border-left: 100px solid transparent;
-  z-index: 1000;
 }
 
 .cercle {
@@ -144,4 +145,71 @@ body {
       0% 50%
     );
   }
+}
+
+/* Jeux d'Echec, le pion */
+.echec {
+  width: 500px;
+  height: 300px;
+  background: green;
+  z-index: 10;
+}
+
+.pion {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 55px;
+}
+
+.pion div {
+  background: #d86f45;
+}
+
+.pion :nth-child(1) {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.pion :nth-child(2) {
+  width: 80px;
+  height: 20px;
+  border-radius: 20px 20px 35px 35px;
+}
+
+.pion :nth-child(3) {
+  width: 90px;
+  height: 65px;
+  z-index: 1;
+}
+
+.pion :nth-child(3)::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: green;
+  margin: -65px 0 0 -125px;
+  z-index: -10;
+}
+
+.pion :nth-child(3)::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: green;
+  margin: -150px 0 0 65px;
+  z-index: -10;
+}
+
+.pion :nth-child(4) {
+  width: 140px;
+  height: 40px;
+  border-radius: 20px 20px 10px 10px;
 }
