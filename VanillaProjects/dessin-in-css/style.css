@@ -8,8 +8,8 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #85FFBD;
-  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
   padding: 0 50px;
 }
 
@@ -43,9 +43,10 @@ body {
   top: -75px;
 }
 
-.coeur::before, .coeur::after {
+.coeur::before,
+.coeur::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100px;
   height: 160px;
   background: crimson;
@@ -66,9 +67,10 @@ body {
   left: 325px;
 }
 
-.infini::before, .infini::after {
+.infini::before,
+.infini::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 60px;
   height: 60px;
   border: 20px solid yellow;
@@ -92,22 +94,54 @@ body {
 .clip-path-anim {
   width: 300px;
   height: 300px;
-  background: url('https://api.lorem.space/image/book?w=300&h=300&hash=a6dth6vp');
+  background: url("https://picsum.photos/300/300");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  clip-path: polygon(
+    40% 0%,
+    40% 20%,
+    100% 20%,
+    100% 80%,
+    40% 80%,
+    40% 100%,
+    0% 50%
+  );
   animation: 3.5s clip-anim infinite;
 }
 
 @keyframes clip-anim {
   0% {
-    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    clip-path: polygon(
+      40% 0%,
+      40% 20%,
+      100% 20%,
+      100% 80%,
+      40% 80%,
+      40% 100%,
+      0% 50%
+    );
   }
   50% {
-    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    clip-path: polygon(
+      0% 20%,
+      60% 20%,
+      60% 0%,
+      100% 50%,
+      60% 100%,
+      60% 80%,
+      0% 80%
+    );
   }
   100% {
-    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    clip-path: polygon(
+      40% 0%,
+      40% 20%,
+      100% 20%,
+      100% 80%,
+      40% 80%,
+      40% 100%,
+      0% 50%
+    );
   }
 }
