@@ -1,0 +1,22 @@
+# Vanilla Projects
+
+- Analog Clock
+- Bookmark: TODO: afficher la liste a partir du json
+- Calendar Markdown: TODO: créer une interface
+- Cards
+- Contribution Graph
+- CSS Grid
+- Cube Animation
+- Dessin in CSS
+- Form Checker
+- Hover
+- IMC
+- Iso Game: en cours ...
+- Menu
+- Notification
+- Password Maker
+- Popup
+- Resize
+- Rocket
+- SVG Animation
+- Text Effects
