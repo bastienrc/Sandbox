@@ -5,6 +5,7 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "shutdownAction": "stopCompose",
 
   // Configure tool-specific properties.
   "customizations": {
@@ -53,7 +54,9 @@
         "lamartire.git-indicators",
         "Gruntfuggly.todo-tree",
         "dsznajder.es7-react-js-snippets",
-        "Prisma.prisma"
+        "Prisma.prisma",
+        "bradlc.vscode-tailwindcss",
+        "donjayamanne.githistory"
       ]
     }
   },
